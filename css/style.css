@@ -21,7 +21,7 @@ a {
 }
 
 img {
-  max-width: 100px;
+  max-width: 100%;
 }
 
 /*GRID GERAL*/
@@ -33,9 +33,49 @@ img {
     "sidenav content anuncios"
     "footer footer footer";
 }
-
+/*HEADER*/
 .header {
+  display: grid;
   grid-area: header;
+  /*Gradiente:    
+                    linear-gradient(graus, primeira-cor, segunda-cor)*/
+  background: linear-gradient(135deg, #8844ee, #b07dfb);
+  padding: 30px;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+.logo {
+  max-width: 200px;
+}
+
+.header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header nav a {
+  display: block;
+  padding: 10px;
+  color: white;
+  font-size: 1.125em;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  transition: 0.2s;
+}
+
+.header nav a:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+/*Este esquema li + li, significa que só vai ser colocada as propriedades abaixo no item seguinte do mesma tag. Se o primeiro item não tem um antecessor não é colocado a margin nesse caso
+
+Exemplo do Header:
+
+li LI LI
+
+só será aplicado nos itens com letra maiuscula.
+*/
+.header li + li {
+  margin-left: 30px;
 }
 
 .sidenav {
