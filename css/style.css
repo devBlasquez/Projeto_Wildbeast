@@ -21,7 +21,9 @@ a {
 }
 
 img {
+  display: block;
   max-width: 100%;
+  border-radius: 5px;
 }
 
 /*GRID GERAL*/
@@ -105,12 +107,29 @@ só será aplicado nos itens com letra maiuscula.
   transform: translate3d(0px, -5px, 2px);
 }
 
+/*CONTENT*/
 .content {
   grid-area: content;
 }
+
+/*ANUNCIOS*/
 .anuncios {
   grid-area: anuncios;
+  background: #fafbfc;
+  display: grid;
+  align-content: start;
+  padding: 30px;
+  /*IMPORTANTE: só são adicionados gaps entre os elementos*/
+  gap: 30px;
 }
+
+/*FOOTER*/
 .footer {
   grid-area: footer;
+  background: linear-gradient(135deg, #8844ee, #b07dfb);
+}
+.footer {
+  color: white;
+  text-align: center;
+  padding: 30px;
 }
