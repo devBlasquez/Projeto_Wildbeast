@@ -6,7 +6,7 @@ Esse repositório tem como objetivo mostrar mais um dos trabalhos desenvolvidos 
 
 Conhecimentos de propriedades como:
 
-- grdi-template-areas
+- grid-template-areas
 - grid-template-columns
 - grid-template-rows
 - gap
